@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 
     :root{
-        --background: #E5E5E5; 
+        --background: #E5E5E5;
+        --green: #6fcf97;
     }
 
     *{
@@ -25,5 +26,17 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background: var(--background);
         -webkit-font-smoothing: antialiased; /*fontes mais nitidas pra visao do usuario*/ 
+    }
+
+    body, input, textarea, button{
+        font-family: 'Sura', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong{
+        font-weight: 600;
+    }
+
+    button{
+        cursor: pointer;
     } 
 `
